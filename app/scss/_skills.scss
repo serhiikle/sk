@@ -1,0 +1,44 @@
+.skills {
+  background-color: $colorGradientLight;
+
+  &__box {
+    margin-block-end: 10rem;
+  }
+
+  &__items {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem 8rem;
+    margin-block-end: 5rem;
+
+    &:last-child {
+      margin-block-end: 0;
+    }
+
+    &.languages {
+      justify-content: start;
+    }
+  }
+
+  &__item {
+    max-inline-size: 15rem;
+    color: #fff;
+    text-align: center;
+    margin-block-end: 3rem;
+
+    img {
+      inline-size: 100%;
+      margin-block-end: 2rem;
+    }
+
+    &-name {
+      font-weight: 700;
+      font-size: 1.8rem;
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  }
+}

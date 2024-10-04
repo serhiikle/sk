@@ -1,0 +1,66 @@
+@keyframes autoRotate {
+  from {
+    transform: perspective(100rem) rotateX(-16deg) rotateY(0);
+  }
+
+  to {
+    transform: perspective(100rem) rotateX(-16deg) rotateY(360deg);
+  }
+}
+
+@keyframes showContent {
+  from {
+    transform: translateY(5rem);
+    filter: blur(3rem);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@keyframes positionItem1 {
+  from {
+    transform: $sliderItemTransform1;
+    filter: $sliderItemFilter1;
+    z-index: $sliderItemzIndex1;
+    opacity: $sliderItemzOpacity1;
+  }
+}
+
+@keyframes positionItem2 {
+  from {
+    transform: $sliderItemTransform2;
+    filter: $sliderItemFilter2;
+    z-index: $sliderItemzIndex2;
+    opacity: $sliderItemzOpacity2;
+  }
+}
+
+@keyframes positionItem3 {
+  from {
+    transform: $sliderItemTransform3;
+    filter: $sliderItemFilter3;
+    z-index: $sliderItemzIndex3;
+    opacity: $sliderItemzOpacity3;
+  }
+}
+
+@keyframes positionItem4 {
+  from {
+    transform: $sliderItemTransform4;
+    filter: $sliderItemFilter4;
+    z-index: $sliderItemzIndex4;
+    opacity: $sliderItemzOpacity4;
+  }
+}
+
+@keyframes positionItem5 {
+  from {
+    transform: $sliderItemTransform5;
+    filter: $sliderItemFilter5;
+    z-index: $sliderItemzIndex5;
+    opacity: $sliderItemzOpacity5;
+  }
+}

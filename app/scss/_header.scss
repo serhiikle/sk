@@ -1,0 +1,76 @@
+.header {
+  padding-block: 2rem;
+  
+  &__logo {
+    font-family: $fontAccent;
+    margin-inline-end: auto;
+    font-size: 3.6rem;
+    color: $colorGreen;
+    font-weight: 700;
+    letter-spacing: -5px;
+  }
+
+  &__contact {
+    &-phone {
+      transition: all, .4s;
+      display: flex;
+      align-items: center;
+      gap: .8rem;
+      color: $colorGreen;
+
+      span {
+        display: inline-block;
+        inline-size: 2rem;
+        block-size: 2rem;
+        svg {
+          fill: currentColor;
+        }
+      }
+
+      &:hover {
+        color: $colorDarkGreen;
+      }
+    }
+  }
+}
+
+.top-bar {
+  display: flex;
+  gap: 0 10rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.hero {
+  inline-size: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &__content {
+    max-inline-size: 83rem;
+    margin-inline: auto;
+  }
+
+  &__text {
+    color: $colorDarkGreen;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    font-size: 5.6rem;
+    color: $colorWhite;
+    font-weight: 700;
+    letter-spacing: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-block-end: 1rem;
+  }
+
+  &__subtitle {
+    text-align: right;
+    color: $colorGreen;
+    margin-inline-end: 1.8rem;
+  }
+}

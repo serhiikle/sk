@@ -1,0 +1,44 @@
+.about {
+  background-color: $colorGradientDark;
+
+  &__wrapper {
+    display: flex;
+    gap: 5rem;
+  }
+
+  &__box {
+    margin-block-end: 10rem;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    inline-size: 100%;
+    block-size: 100%;
+    background-color: rgba($colorGradientDark, .2);
+    box-shadow: inset 0 0 4rem 5rem $colorGradientDark;
+  }
+
+  &__image {
+    position: relative; 
+
+    img {
+      // inline-size: 100%;
+      inline-size: 60rem;
+    }
+  }
+
+  &__text {
+    margin-block-end: 5rem;
+    color: $colorLighterGrey;
+
+    p {
+      margin-block-end: 1.5rem;
+    }
+  }
+
+  &__content {
+    padding-block: 3rem;
+  }
+}

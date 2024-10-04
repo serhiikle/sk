@@ -1,0 +1,51 @@
+// COLORS
+$colorDarkGreen: #61892F;
+$colorGreen: #86C232;
+
+$colorDark: #222629;
+
+$colorGray: #474B4F;
+$colorLightGrey: #6B6E70;
+$colorLighterGrey: #9d9d9d;
+
+$colorGradientDark: #14171a;
+$colorGradientLight: #353535;
+
+$colorGradientDarkSecondary: rgb(28, 28, 28);
+$colorGradientLightSecondary: rgb(65, 65, 65);
+
+$colorWhite: #fff;
+$colorBlack: #000;
+
+// FONTS
+
+$fontMain: 'Roboto Mono', sans-serif;
+$fontAccent: 'Sofadi One', cursive;
+
+// SLIDER
+
+// item 1
+$sliderItemTransform1: translate(-100%, -5%), scale(1.5);
+$sliderItemFilter1: blur(30px);
+$sliderItemzIndex1: 11;
+$sliderItemzOpacity1: 0;
+// item 2
+$sliderItemTransform2: translate(0, 0);
+$sliderItemFilter2: blur(0);
+$sliderItemzIndex2: 10;
+$sliderItemzOpacity2: 1;
+// item 3
+$sliderItemTransform3: translate(50%, 10%) scale(.8);
+$sliderItemFilter3: blur(10px);
+$sliderItemzIndex3: 9;
+$sliderItemzOpacity3: 1;
+// item 4
+$sliderItemTransform4: translate(90%, 20%) scale(.5);
+$sliderItemFilter4: blur(30px);
+$sliderItemzIndex4: 8;
+$sliderItemzOpacity4: 1;
+// item 5
+$sliderItemTransform5: translate(120%, 30%) scale(.3);
+$sliderItemFilter5: blur(40px);
+$sliderItemzIndex5: 7;
+$sliderItemzOpacity5: 0;
