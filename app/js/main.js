@@ -28,8 +28,8 @@ const sliderItemBox = slider.querySelector('.slider__items');
 let unAcceptClick;
 
 function showSlider(type) {
-  buttonNext.style.pointerEvents = 'none';
-  buttonPrev.style.pointerEvents = 'none';
+  // buttonNext.style.pointerEvents = 'none';
+  // buttonPrev.style.pointerEvents = 'none';
 
   slider.classList.remove('next', 'prev');
   const sliderItems = slider.querySelectorAll('.slider__item');
@@ -41,11 +41,11 @@ function showSlider(type) {
     sliderItemBox.prepend(sliderItems[lastItem]);
     slider.classList.add('prev');
   }
-  clearTimeout(unAcceptClick);
-  unAcceptClick = setTimeout(() => {
-    buttonNext.style.pointerEvents = 'auto';
-    buttonPrev.style.pointerEvents = 'auto';
-  }, 1500);
+  // clearTimeout(unAcceptClick);
+  // unAcceptClick = setTimeout(() => {
+  //   buttonNext.style.pointerEvents = 'auto';
+  //   buttonPrev.style.pointerEvents = 'auto';
+  // }, 1500);
 }
 
 buttonNext.addEventListener('click', () => {

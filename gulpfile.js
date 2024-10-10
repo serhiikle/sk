@@ -50,19 +50,6 @@ function images(){
     .pipe(dest('app/images'))
 }
 
-function sprite () {
-  return src('app/images/*.svg')
-    .pipe(svgSprite({
-      mode: {
-        stack: {
-          sprite: '../sprite.svg',
-          example: true 
-        }
-      }
-    }))
-    .pipe(dest('app/images'))
-}
-
 function scripts() {
   return src([
     'app/js/main.js',
@@ -107,8 +94,7 @@ function building() {
     'app/css/style.min.css',
     '!app/images/**/*.html',
     'app/images/*.*',
-    '!app/images/*.svg',
-    'app/images/sprite.svg',
+    'app/images/*.svg',
     'app/fonts/*.*',
     'app/js/main.min.js',
     'app/*.html'
@@ -121,7 +107,6 @@ exports.images = images;
 exports.fonts = fonts;
 exports.pages = pages;
 exports.building = building;
-exports.sprite = sprite;
 exports.scripts = scripts;
 exports.watching = watching;
 
